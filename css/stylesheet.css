@@ -199,7 +199,6 @@ section.module li {
 
 section.module.content {
   padding: 40px 0;
-  color: #000000;
   background-color: #efefef;
   font-family: "Montserrat";
   border-top: solid 2px #ffffff;
@@ -234,6 +233,7 @@ h1 img{
 }
 
 .row1 h3{
+  color: #441e11 !important;
   font-family: "Montserrat";
   font-size: 30px;
   margin-top: -280px;
@@ -289,8 +289,7 @@ h2  {
 
 h3 {
   font-family: "Montserrat";
-  color: #fff;
-  font-size: 30px !important;
+  color: #441e11;
 }
 
 p  {
@@ -470,13 +469,14 @@ section.module.parallax-4 li {
 
   .row1{
     float: left;
-    width: 350px;
+    width: 320px;
+    margin-left: 20px;
   }
 
   .row1 h3{
     color: #441e11;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 20px !important;
     margin-top: 30px;
     margin-left: 0px;
   }
@@ -484,7 +484,7 @@ section.module.parallax-4 li {
   .row1 p{
     color: #000;
     margin-left: 0px;
-    font-size: 10px;
+    font-size: 16px !important;
   }   
 
   .row2 {
@@ -573,7 +573,7 @@ section.module.parallax-4 li {
   .row1{
     float: left;
     width: 350px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .row1 h3{
