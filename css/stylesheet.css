@@ -12,11 +12,12 @@
       MENU STYLING 
     ~~~~~~~~~~~~~~~~
 */
+
 #nav-trigger {
   position: relative;
   display: none;
-  text-align: center;
-  background-color: rgba(1, 0, 0, 1.0);
+  text-align: left;
+  background-color: #ffffff;
   width: 100%;
   padding: 10px 30px;
 }
@@ -27,8 +28,20 @@
 }
 
 #nav-trigger span img {
-  max-height: 40px;
+  height: 30px;
 }
+
+#nav-trigger  img#logo {
+  height: 40px;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+#nav-trigger p{
+  background-color: #ffffff;
+    text-align: center;
+    margin-top: -25px;
+  }
 
 #nav-trigger span:after {
   display: inline-block;
@@ -47,27 +60,28 @@
 }
 
 nav#nav-main {
-  background-color: #000000;
-  padding: 10px 0;
+  background-color: rgba( 0, 0, 0, 0);
+  padding: 15px 0;
   text-transform: uppercase;
-  font-family: "Dosis";
-  position: fixed;
+  font-family: "Montserrat";
+  position: absolute;
   width: 100%;
-  font-size: 13px;
+  font-size: 17px;
   top: 0px;
   left: 0px;
   z-index: 1;
+  height: 50px;
 }
 
 nav#nav-main ul {
   list-style-type: none;
   text-align: center;
+  margin-top: -7px;
 }
 
 nav#nav-main li {
   display: inline-block;
-  padding: 0 6px;
-
+  padding: 0 2px;
 }
 
 nav#nav-main li:last-child {
@@ -76,23 +90,23 @@ nav#nav-main li:last-child {
 
 nav#nav-main a {
   display: block;
-  color: #efefef;
+  color: #ffffff;
   padding: 7px 30px;
  }
 
 nav#nav-main a:hover {
-  color: #ff5202;
+  color: #90ca89;
   text-decoration: none;
 }
 
 #nav-main a.active {
-  color: #ff5202;
+  color: #90ca89;
 }
 
 nav#nav-mobile {
-  position: absolute;
+  position: relative;
   display: none; 
-  font-family: "Dosis";
+  font-family: "Montserrat";
   text-transform: uppercase;
   z-index: 1;
 }
@@ -103,14 +117,17 @@ nav#nav-mobile ul {
   left: 0;
   right: 0;
   margin-left: -30px;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 1.0);
+  text-align: center;
+  background-color: #ffffff;
   margin-bottom: 0px !important;
+  border-top: solid 2px #90ca89;
 }
 
 nav#nav-mobile li {
   display: block;
   margin: 0 -5px;
+  margin-left: -10px !important;
+  border-bottom: solid 2px #90ca89;
 }
 
 nav#nav-mobile li:last-child {
@@ -119,17 +136,16 @@ nav#nav-mobile li:last-child {
 
 nav#nav-mobile a {
   display: block;
-  color: #efefef;
+  color: #000000;
   padding: 10px 30px;
 }
 
 nav#nav-mobile a:hover {
-  color: #FF8000;
+  color: #90ca89;
   text-decoration: none; 
 }
 
-
-@media all and (max-width: 900px) {
+@media all and (max-width: 1024px) {
   #nav-trigger {
     display: block; }
 
@@ -150,37 +166,22 @@ section.module:last-child {
   margin-bottom: 0;
 }
 
-section.module h2 {
+/*section.module h2 {
   margin-bottom: 10px;
-  font-family: "Portago ITC";
+  font-family: "Montserrat";
   font-size: 35px;
   text-align: left;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}*/
 
-}
-
-section.module h2 a{
-  color: #00ccd6;
-  text-decoration: none;
-  text-align: left;
-  opacity: 1.0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-
-}
-
-section.module h2 a:hover{
-  opacity: 0.6;
-}
-
-section.module p {
+/*section.module p {
   margin-bottom: 40px;
   font-size: 17px !important;
   font-weight: 300;
-}
+}*/
 
 section.module p a{
  text-decoration: none;
- color: #00ccd6;
+ color: #000000;
  opacity: 1.0;
 }
 
@@ -198,43 +199,149 @@ section.module li {
 
 section.module.content {
   padding: 40px 0;
-  color: #efefef;
-  background-color: #000000;
-  font-family: "Dosis";
-}
-
-h3 {
-  text-align: center;
+  color: #000000;
+  background-color: #efefef;
+  font-family: "Montserrat";
+  border-top: solid 2px #ffffff;
 }
 
 @font-face{
-  font-family: "Portago ITC";
-  src: url("../fonts/Portago_ITC.ttf");
-}
-
-@font-face{
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-Regular.ttf");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 
 h1 {
   text-align: center;
-  margin-top: 200px;
+}
+
+h1 img{
+  height: 580px;
+  margin-top: 40px;
+  margin-left: -2px;
+}
+
+#key {
+  margin-left: 650px !important;
+}
+
+.row1{
+  float: left;
+  width: 400px;
+}
+
+.row1 img {
+  margin-right: 500px !important;
+}
+
+.row1 h3{
+  font-family: "Montserrat";
+  font-size: 30px;
+  margin-top: -280px;
+  margin-left: -100px;
+}
+
+.row1 p{
+  color: #000;
+  margin-left: -100px;
+}
+
+.row2 {
+  float: right;
+  width: 350px;
+  margin-top: -450px;
+  text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+  margin-right: -100px;
+}
+
+.row2 a{
+  text-decoration: none;
+  color: #ff5202;
+}
+
+.row3 a{
+  text-decoration: none;
+  color: #b171aa;
+}
+
+.row2 a:hover{
+  text-decoration: none;
+  opacity: .8;
+}
+
+.row3 a:hover{
+  text-decoration: none;
+  opacity: .7;
+}
+
+.row3 {
+  float: left;
+  width: 350px;
+  margin-top: -350px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  margin-left: -100px;
+}
+
+h2  {
+  font-family: "Montserrat";
+  font-size: 21px;
+  color: #fff;
+}
+
+h3 {
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 30px !important;
+}
+
+p  {
+  font-family: "Montserrat";
+  font-size: 17px;
+  color: #fff;
+}
+
+li {
+  font-family: "Montserrat";
+  color: #fff;
 }
 
 section.module.parallax {
-  height: 500px;
+  height: 700px;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background size: cover;
 }
 
 section.module.parallax-1 {
-  background-image: url("../img/homebg.jpg");
+  background-image: url("../img/parallaxbg.png");
 }
 
+section.module.parallax-2 {
+  background-image: url("../img/mgbg.jpg");
+}
 
+section.module.parallax-3 {
+  background-image: url("../img/pdbg.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("../img/parallaxbg.png");
+  height: 500px;
+}
+
+section.module.parallax-4 h3 {
+  text-transform: uppercase;
+  margin-top: 100px;
+  color: #90ca89;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+section.module.parallax-4 li {
+  text-align: center;
+  display: block;
+  margin-left: -40px;
+  font-size: 25px;
+}
 
 
 /*
@@ -242,7 +349,99 @@ section.module.parallax-1 {
 */
 
 @media all and (min-width: 320px) {
+  section.module.parallax-1 {
+    background-image: url("../img/homebg.jpg");
+    height: 568px;
+  }
 
+  h1 img{
+    height: 300px;
+    margin-top: 100px;
+    margin-left: -2px;
+  }
+
+   #key {
+    height: 180px;
+    margin-left: 20px !important;
+  }
+
+  .row1{
+    float: left;
+    width: 290px;
+  }
+
+  .row1 h3{
+    color: #441e11;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .row1 p{
+    color: #000;
+    margin-left: 0px;
+    font-size: 10px;
+  } 
+
+  .row2 {
+    float: left;
+    width: 290px;
+    margin-top: -20px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+  }
+  .row3 {
+    float: left;
+    width: 290px;
+    margin-top: 20px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-left: 0px !important;
+  }
+
+  h2  {
+    font-family: "Montserrat";
+    font-size: 20px !important;
+    color: #fff;
+  }
+
+  p  {
+    font-family: "Montserrat";
+    font-size: 14px !important;
+    color: #fff;
+  }
+
+  section.module.parallax-2 {
+    height: 500px;
+  }
+
+  section.module.parallax-2 h1 img{
+    height: 200px;
+    margin-top: 10px;
+    margin-left: -30px;
+  }
+
+  section.module.parallax-3 {
+    height: 520px;
+  }
+
+  section.module.parallax-3 h1 img{
+    height: 180px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  section.module.parallax-4 {
+    height: 300px;
+  }
+
+  section.module.parallax-4 h3 {
+    font-size: 20px !important;
+    margin-top: 40px;
+  }
+
+  section.module.parallax-4 li {
+    font-size: 14px;
+  }
 
 }
 
@@ -253,6 +452,100 @@ section.module.parallax-1 {
 */
 
 @media all and (min-width: 360px) {
+  section.module.parallax-1 {
+    background-image: url("../img/homebg.jpg");
+    height: 640px;
+  }
+
+  h1 img{
+    height: 380px;
+    margin-top: 80px;
+    margin-left: -2px;
+  }
+
+   #key {
+    height: 230px;
+    margin-left: 20px !important;
+  }
+
+  .row1{
+    float: left;
+    width: 350px;
+  }
+
+  .row1 h3{
+    color: #441e11;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .row1 p{
+    color: #000;
+    margin-left: 0px;
+    font-size: 10px;
+  }   
+
+  .row2 {
+    float: left;
+    width: 300px;
+    margin-top: 0px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-left: 20px;
+  }
+  .row3 {
+    float: right;
+    width: 300px;
+    margin-top: 20px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-right: 20px;
+  }
+
+  h2  {
+    font-family: "Montserrat";
+    font-size: 25px !important;
+    color: #fff;
+  }
+
+  p  {
+    font-family: "Montserrat";
+    font-size: 16px !important;
+    color: #fff;
+  }  
+
+  section.module.parallax-2 {
+    height: 600px;
+  }
+
+  section.module.parallax-2 h1 img{
+    height: 250px;
+    margin-top: -5px;
+    margin-left: -2px;
+  }
+
+  section.module.parallax-3 {
+    height: 550px;
+  }
+
+  section.module.parallax-3 h1 img{
+    height: 220px;
+    margin-top: 15px;
+    margin-left: -2px;
+  }
+
+  section.module.parallax-4 {
+    height: 300px;
+  }
+
+  section.module.parallax-4 h3 {
+    font-size: 20px !important;
+    margin-top: 40px;
+  }
+
+  section.module.parallax-4 li {
+    font-size: 14px;
+  }
 
 }
 
@@ -261,6 +554,101 @@ section.module.parallax-1 {
 */
 
 @media all and (min-width: 412px) {
+  section.module.parallax-1 {
+    background-image: url("../img/homebg.jpg");
+    height: 700px;
+  }
+
+  h1 img{
+    height: 380px;
+    margin-top: 100px;
+    margin-left: -2px;
+  }
+
+   #key {
+    height: 230px;
+    margin-left: 35px !important;
+  }
+
+  .row1{
+    float: left;
+    width: 350px;
+    margin-left: 30px;
+  }
+
+  .row1 h3{
+    color: #441e11;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .row1 p{
+    color: #000;
+    margin-left: 0px;
+    font-size: 10px;
+  }   
+
+  .row2 {
+    float: left;
+    width: 350px;
+    margin-top: -30px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-left: 20px;
+  }
+  .row3 {
+    float: right;
+    width: 350px;
+    margin-top: 20px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-right: 20px;
+  }
+
+  h2  {
+    font-family: "Montserrat";
+    font-size: 30px !important;
+    color: #fff;
+  }
+
+  p  {
+    font-family: "Montserrat";
+    font-size: 17px !important;
+    color: #fff;
+  }  
+
+  section.module.parallax-2 {
+    height: 600px;
+  }
+
+  section.module.parallax-2 h1 img{
+    height: 300px;
+    margin-top: -45px;
+    margin-left: -2px;
+  }
+
+  section.module.parallax-3 {
+    height: 550px;
+  }
+
+  section.module.parallax-3 h1 img{
+    height: 220px;
+    margin-top: 15px;
+    margin-left: -2px;
+  }
+
+    section.module.parallax-4 {
+    height: 300px;
+  }
+
+  section.module.parallax-4 h3 {
+    font-size: 30px !important;
+    margin-top: 20px;
+  }
+
+  section.module.parallax-4 li {
+    font-size: 17px;
+  }
 
 }
 
@@ -272,8 +660,104 @@ section.module.parallax-1 {
 */
 
 @media all and (min-width: 600px) {
+  section.module.parallax-1 {
+    background-image: url("../img/parallaxbg.png");
+    height: 320px;
+  }
 
- 
+  h1 img{
+    height: 200px;
+    margin-top: 15px;
+    margin-left: -2px;
+  }
+
+   #key {
+    height: 200px;
+    float: right;
+    margin-left: 325px !important;
+  }
+
+  .row1{
+    float: left;
+    width: 250px;
+    margin-left: 30px;
+  }
+
+  .row1 h3{
+    color: #441e11;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: -200px;
+    margin-left: 0px;
+  }
+
+  .row1 p{
+    color: #000;
+    margin-left: 0px;
+    font-size: 10px;
+  }  
+
+  .row2 {
+    float: right;
+    width: 250px;
+    margin-top: -280px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-right: 0px;
+  }
+
+  .row3 {
+    float: left;
+    width: 300px;
+    margin-top: -200px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin-left: 0px;
+  }
+
+  h2  {
+    font-family: "Montserrat";
+    font-size: 17px !important;
+    color: #fff;
+  }
+
+  p  {
+    font-family: "Montserrat";
+    font-size: 14px !important;
+    color: #fff;
+  }
+
+  section.module.parallax-2 {
+    height: 390px;
+  }
+
+  section.module.parallax-2 h1 img{
+    height: 250px;
+    margin-top: 50px;
+    margin-left: -280px !important;
+  }
+
+  section.module.parallax-3 {
+    height: 390px;
+  }
+
+  section.module.parallax-3 h1 img{
+    height: 225px;
+    margin-top: 40px;
+    margin-right: -250px !important;
+  }
+
+  section.module.parallax-4 {
+    height: 300px;
+  }
+
+  section.module.parallax-4 h3 {
+    font-size: 30px !important;
+    margin-top: 20px;
+  }
+
+  section.module.parallax-4 li {
+    font-size: 17px;
+  }
+
 }
 
 
@@ -283,6 +767,224 @@ section.module.parallax-1 {
 */
 
 @media all and (min-width: 960px) {
+  section.module.parallax-1 {
+    background-image: url("../img/parallaxbg.png");
+    height: 650px;
+  }
+
+  h1 img{
+    height: 400px;
+    margin-top: 120px;
+    margin-left: -2px;
+  }
+
+   #key {
+    height: 250px;
+    float: right;
+    margin-left: 325px !important;
+  }
+
+  .row1{
+    float: left;
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  .row1 h3{
+    color: #441e11;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: -250px;
+    margin-left: 0px;
+  }
+
+  .row1 p{
+    color: #000;
+    margin-left: 0px;
+    font-size: 10px;
+  } 
+
+  .row2 {
+    float: right;
+    width: 300px;
+    margin-top: -380px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-right: -30px;
+  }
+  .row3 {
+    float: left;
+    width: 300px;
+    margin-top: -300px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin-left: -30px !important;
+  }
+
+  h2  {
+    font-family: "Montserrat";
+    font-size: 25px !important;
+    color: #fff;
+  }
+
+  p  {
+    font-family: "Montserrat";
+    font-size: 17px !important;
+    color: #fff;
+  }
+
+
+  section.module.parallax-2 {
+    height: 400px;
+  }
+
+  section.module.parallax-2 h1 {
+    text-align: left;
+  }
+
+  section.module.parallax-2 h1 img{
+    height: 350px;
+    margin-top: 10px;
+    margin-left: -50px !important;
+  }
+
+  section.module.parallax-3 {
+    height: 400px;
+  }
+
+  section.module.parallax-3 h1 {
+    text-align: right;
+  }
+
+  section.module.parallax-3 h1 img{
+    height: 280px;
+    margin-top: 30px;
+    margin-right: -20px !important;
+  }
+
+  section.module.parallax-4 {
+    height: 350px;
+  }
+
+  section.module.parallax-4 h3 {
+    font-size: 25px !important;
+    margin-top: 60px;
+  }
+
+  section.module.parallax-4 li {
+    font-size: 17px;
+  }
+
+}
+
+
+@media all and (min-width: 1200px) {
+  section.module.parallax-1 {
+    background-image: url("../img/parallaxbg.png");
+    height: 900px;
+  }
+
+
+  h1 img{
+    height: 580px;
+    margin-top: 120px;
+    margin-left: -2px;
+  }
+
+  #key {
+    margin-top: 10px;
+    height: 250px;
+    float: right;
+    margin-left: 325px !important;
+  }
+
+  .row1{
+    float: left;
+    width: 380px;
+    margin-left: -80px;
+  }
+
+  .row1 h3{
+    color: #441e11;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: -270px;
+    margin-left: 0px;
+  }
+
+  .row1 p{
+    color: #000;
+    margin-left: 0px;
+    font-size: 10px;
+  } 
+
+
+  .row2 {
+    float: right;
+    width: 380px;
+    margin-top: -450px;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 1.0);
+    margin-right: -120px;
+  }
+  .row3 {
+    float: left;
+    width: 450px;
+    margin-top: -350px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    margin-left: -100px;
+  }
+
+  h2  {
+    font-family: "Montserrat";
+    font-size: 30px !important;
+    color: #fff;
+  }
+
+  p  {
+    font-family: "Montserrat";
+    font-size: 20px !important;
+    color: #fff;
+  }
+
+
+  section.module.parallax-2 {
+    height: 600px;
+  }
+
+  section.module.parallax-2 h1 {
+    text-align: left;
+  }
+
+  section.module.parallax-2 h1 img{
+    height: 480px;
+    margin-top: 50px;
+    margin-left: -120px !important;
+  }
+
+  section.module.parallax-3 {
+    height: 600px;
+  }
+
+  section.module.parallax-3 h1 {
+    text-align: right;
+  }
+
+  section.module.parallax-3 h1 img{
+    height: 400px;
+    margin-top: 100px;
+    margin-right: -100px !important;
+  }
+
+  section.module.parallax-4 {
+    height: 350px;
+  }
+
+  section.module.parallax-4 h3 {
+    font-size: 30px !important;
+    margin-top: 60px;
+  }
+
+  section.module.parallax-4 li {
+    font-size: 20px;
+  }
 
 }
 
@@ -296,8 +998,8 @@ section.module.parallax-1 {
 
 .footer {
   clear: both;
-  background-color: #000000;
-  text-align: right;
+  background-color: #efefef;
+  text-align: center;
   margin-left: -35px;
 }
 
@@ -319,13 +1021,14 @@ section.module.parallax-1 {
 .rights {
   text-align: center;
   font-size: 12px; 
-  background-color: #000000;
-  color: #efefef;
-  font-family: "Dosis";
+  background-color: #efefef;
+  font-family: "Montserrat";
 }
 
 .rights p {
+  color: #000000;
   margin: 0 0 -10px;
   padding-bottom: 20px;
+  font-size: 12px !important; 
 }
 
