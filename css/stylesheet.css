@@ -219,6 +219,14 @@ h1 img{
   margin-left: -2px;
 }
 
+#glove{
+  color: #ff5202;
+}
+
+#don{
+  color: #b171aa;
+}
+
 #key {
   margin-left: 650px !important;
 }
@@ -342,6 +350,47 @@ section.module.parallax-4 li {
   font-size: 25px;
 }
 
+section.module.parallax-5 {
+  background-image: url("../img/parallaxbg.png");
+  height: 600px;
+}
+
+
+section.module.parallax-5 h1{
+  text-align: center;
+}
+
+section.module.parallax-5 h1 img{
+  height: 300px;
+  margin-top: 150px;
+}
+
+#title{
+  width: 800px;
+  position: relative;
+  margin-left: 80px;
+}
+
+#title h2{
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  color: #441e11;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+#title p{
+  font-family: "Montserrat";
+  color: #000;
+  font-size: 17px;
+  margin-bottom: 30px;
+  border-bottom: solid 5px #90ca89;
+}
+
+#title a {
+  color: #b171aa;
+}
+
 
 /*
     MEDIA 320px min (iPhone 5)
@@ -442,6 +491,30 @@ section.module.parallax-4 li {
     font-size: 14px;
   }
 
+  section.module.parallax-5 {
+    height: 250px;
+  }
+
+  section.module.parallax-5 h1 img{
+    height: 120px;
+    margin-top: 40px;
+  }
+
+  #title{
+    width: 290px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  #title h2{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  #title p{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -547,6 +620,31 @@ section.module.parallax-4 li {
     font-size: 14px;
   }
 
+  section.module.parallax-5 {
+    height: 250px;
+  }
+
+  section.module.parallax-5 h1 img{
+    height: 120px;
+    margin-top: 40px;
+  }
+
+  #title{
+    width: 330px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  #title h2{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  #title p{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
 }
 
 /*
@@ -648,6 +746,31 @@ section.module.parallax-4 li {
 
   section.module.parallax-4 li {
     font-size: 17px;
+  }
+
+  section.module.parallax-5 {
+    height: 250px;
+  }
+
+  section.module.parallax-5 h1 img{
+    height: 150px;
+    margin-top: 40px;
+  }
+
+  #title{
+    width: 380px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  #title h2{
+    font-size: 30px !important;
+    margin-top: 30px;
+  }
+
+  #title p{
+    font-size: 17px !important;
+    margin-bottom: 30px;
   }
 
 }
@@ -758,6 +881,30 @@ section.module.parallax-4 li {
     font-size: 17px;
   }
 
+  section.module.parallax-5 {
+    height: 300px;
+  }
+
+  section.module.parallax-5 h1 img{
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  #title{
+    width: 600px;
+    position: relative;
+    margin-left: 50px;
+  }
+
+  #title h2{
+    font-size: 30px !important;
+    margin-top: 30px;
+  }
+
+  #title p{
+    font-size: 17px !important;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -873,6 +1020,31 @@ section.module.parallax-4 li {
     font-size: 17px;
   }
 
+  section.module.parallax-5 {
+    height: 300px;
+  }
+
+  section.module.parallax-5 h1 img{
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  #title{
+    width: 600px;
+    position: relative;
+    margin-left: 50px;
+  }
+
+  #title h2{
+    font-size: 30px !important;
+    margin-top: 30px;
+  }
+
+  #title p{
+    font-size: 17px !important;
+    margin-bottom: 30px;
+  }
+
 }
 
 
@@ -905,7 +1077,7 @@ section.module.parallax-4 li {
   .row1 h3{
     color: #441e11;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 30px !important;
     margin-top: -270px;
     margin-left: 0px;
   }
@@ -913,7 +1085,7 @@ section.module.parallax-4 li {
   .row1 p{
     color: #000;
     margin-left: 0px;
-    font-size: 10px;
+    font-size: 20px !important;
   } 
 
 
@@ -986,6 +1158,36 @@ section.module.parallax-4 li {
     font-size: 20px;
   }
 
+  section.module.parallax-5 {
+    height: 600px;
+  }
+
+
+  section.module.parallax-5 h1{
+    text-align: center;
+  }
+
+  section.module.parallax-5 h1 img{
+    height: 300px;
+    margin-top: 150px;
+  }
+
+  #title{
+    width: 800px;
+    position: relative;
+    margin-left: 80px;
+  }
+
+  #title h2{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  #title p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    border-bottom: solid 5px #90ca89;
+  }
 }
 
 
